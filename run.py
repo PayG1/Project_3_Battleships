@@ -29,4 +29,29 @@ def rand_row(sea):
 def rand_column(sea):
     return randint((0), len(sea) - 1)
 
+""" Added Ships  """
+ship_row = rand_row(sea)
+ship_column = rand_column(sea)
+second_ship_row = rand_row(sea)
+second_ship_column = rand_column(sea)
+list_1 = [ship_row, ship_column]
+list_2 = [second_ship_row, second_ship_column]
 
+
+for guess in range(8):
+    print('guess', guess +1)
+    guess_row = int(input("Guess row:"))-1
+    guess_column = int(input("Guess column:"))-1
+
+    if (guess_row == ship_row and guess_column == ship_column) or (guess_row == second_ship_row and guess_column == second_ship_column):
+        print( "Nice shot!")
+        break 
+    else:
+        if (guess_row < 0 or guess_row > 8) or (guess_column < 0 or guess_column > 8):
+            print("Where are you aiming at, Focus!")
+        else:
+            print("Nice try, you will get it next time")
+            sea[guess_row][guess_column] = "~"
+            if guess == 8:
+                print("We missed all the cannonballs? It's game over.")
+    print_sea(sea)
