@@ -11,7 +11,7 @@ sea = []
 
 """ Made the board more spacious"""
 for i in range(8):
-    sea.append(["~"] * 8)
+    sea.append(["~"] * 7)
 
 def print_sea(sea):
     for row in sea:
@@ -22,7 +22,6 @@ print_sea(sea)
 
 """ Calculates a random row and column """
 
-
 def rand_row(sea):
     return randint(0, len(sea) - 1)
 
@@ -30,6 +29,7 @@ def rand_column(sea):
     return randint((0), len(sea) - 1)
 
 """ Added Ships  """
+
 ship_row = rand_row(sea)
 ship_column = rand_column(sea)
 second_ship_row = rand_row(sea)
@@ -37,8 +37,9 @@ second_ship_column = rand_column(sea)
 list_1 = [ship_row, ship_column]
 list_2 = [second_ship_row, second_ship_column]
 
-""" loop for the player to keep trying to hit the ship """
-for guess in range(8):
+""" Loop for the player to keep trying to hit the ship """
+
+for guess in range(7):
     print('guess', guess +1)
     guess_row = int(input("Guess row:"))-1
     guess_column = int(input("Guess column:"))-1
@@ -47,7 +48,7 @@ for guess in range(8):
         print( "Nice shot! We can escape now")
         break 
     else:
-        if (guess_row < 0 or guess_row > 8) or (guess_column < 0 or guess_column > 8):
+        if (guess_row < 0 or guess_row > 7) or (guess_column < 0 or guess_column > 7):
             print("Where are you aiming at, Focus!")
         else:
             print("That was close, keep trying")
