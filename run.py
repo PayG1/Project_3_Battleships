@@ -17,7 +17,7 @@ def print_sea(sea):
     for row in sea:
         print ("  ".join(row))
 
-print("Wake up! We are being attacked, you are the only one who can use the cannons.\nWe have 8 cannon balls left, try your best to hit the  enemy ship.")
+print("Wake up! We are being attacked, you are the only one who can use the cannons.\nUse the cannonballs and  try your best to hit the  enemy ship.")
 print_sea(sea)
 
 """ Calculates a random row and column """
@@ -50,8 +50,8 @@ for guess in range(8):
         if (guess_row < 0 or guess_row > 8) or (guess_column < 0 or guess_column > 8):
             print("Where are you aiming at, Focus!")
         else:
-            print("Taht was close, keep trying")
-            sea[guess_row][guess_column] = "~"
-        if guess == 8:
-            print("You  missed all the cannonballs? It's game over.")
+            print("That was close, keep trying")
+            sea[guess_row][guess_column] = "x"
+    if guess == 7:
+        print("Wait, we are out of cannonballs? It's game over.")
     print_sea(sea)
