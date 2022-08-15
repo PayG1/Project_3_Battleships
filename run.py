@@ -15,7 +15,7 @@ for i in range(8):
 
 def print_sea(sea):
     for row in sea:
-        print ("  ".join(row))
+        print( "  ".join(row))
 
 print("Wake up! We are being attacked, you are the only one who can use the cannons.\nUse the cannonballs and  try your best to hit the  enemy ship.")
 print_sea(sea)
@@ -39,7 +39,7 @@ list_2 = [second_ship_row, second_ship_column]
 
 """ Loop for the player to keep trying to hit the ship """
 
-for guess in range(7):
+for guess in range(8):
     print('guess', guess +1)
     guess_row = int(input("Guess row:"))-1
     guess_column = int(input("Guess column:"))-1
