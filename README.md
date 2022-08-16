@@ -29,10 +29,10 @@ With this project you have to guess where the randomly generated enemy ship is l
   -This project was deployed using Code Institute's mock terminal for Heroku.
   
   The steps for deployment are as follows:
-    - Created a new Heroku app
-    - Set the buildpacks to Python and NodeJS in that order
-    - Linked the Heroku app to the repository
-    - Clicked on Deploy
+    - Created a new Heroku app.
+    - Set the buildpacks to Python and NodeJS in that order.
+    - Linked the Heroku app to the repository.
+    - Clicked on Deploy.
     
 ## Credit
   - This project uses the Code Institute student template for deploying the third portfolio project, the Python command-line project.
