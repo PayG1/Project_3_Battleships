@@ -4,7 +4,7 @@ With this project you have to guess where the randomly generated enemy ship is l
 
 ## Features
 
-![](assets/images/projecr3.PNG)
+![](assets/images/project_3.PNG)
 
   - The user can input the column and row they want to aim at.
   - The Game keeps track of the user's turn.
