@@ -48,13 +48,13 @@ for guess in range(8):
     guess_row = int(input("Guess row:"))-1
     guess_column = int(input("Guess column:"))-1
 
-    if (guess_row == ship_row and guess_column == ship_column) \
-        or (guess_row == second_ship_row and guess_column == second_ship_column):
+    if (guess_row == ship_row and guess_column == ship_column)\
+            or (guess_row == second_ship_row and guess_column == second_ship_column):
         print("Nice shot! We can escape now")
         break
     else:
         if (guess_row < 0 or guess_row > 7) \
-            or (guess_column < 0 or guess_column > 7):
+                or (guess_column < 0 or guess_column > 7):
             print("Where are you aiming at, Focus!")
         else:
             print("That was close, keep trying")
