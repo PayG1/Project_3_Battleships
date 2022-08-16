@@ -13,17 +13,21 @@ sea = []
 for i in range(8):
     sea.append(["~"] * 7)
 
+
 def print_sea(sea):
     for row in sea:
-        print( "  ".join(row))
+        print("  ".join(row))
 
-print("Wake up! We are being attacked, you are the only one who can use the cannons.\nUse the cannonballs and  try your best to hit the  enemy ship.")
+print("Wake up! We are being attacked, you are the only one who can use the cannons.\
+\nUse the cannonballs and hit the  enemy ship.")
 print_sea(sea)
 
 """ Calculates a random row and column """
 
+
 def rand_row(sea):
     return randint(0, len(sea) - 1)
+
 
 def rand_column(sea):
     return randint((0), len(sea) - 1)
@@ -40,15 +44,17 @@ list_2 = [second_ship_row, second_ship_column]
 """ Loop for the player to keep trying to hit the ship """
 
 for guess in range(8):
-    print('guess', guess +1)
+    print('guess', guess+1)
     guess_row = int(input("Guess row:"))-1
     guess_column = int(input("Guess column:"))-1
 
-    if (guess_row == ship_row and guess_column == ship_column) or (guess_row == second_ship_row and guess_column == second_ship_column):
-        print( "Nice shot! We can escape now")
-        break 
+    if (guess_row == ship_row and guess_column == ship_column) \
+        or (guess_row == second_ship_row and guess_column == second_ship_column):
+        print("Nice shot! We can escape now")
+        break
     else:
-        if (guess_row < 0 or guess_row > 7) or (guess_column < 0 or guess_column > 7):
+        if (guess_row < 0 or guess_row > 7) \
+            or (guess_column < 0 or guess_column > 7):
             print("Where are you aiming at, Focus!")
         else:
             print("That was close, keep trying")
