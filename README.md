@@ -20,6 +20,7 @@ With this project you have to guess where the randomly generated enemy ship is l
   - Tested that the board changes and is updated when you miss a shot.
  
  -Validator Testing
+ 
   ![](assets/images/pep8.PNG)
   - Fully passed the PEP8 online validator with no major issues
 
