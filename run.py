@@ -52,10 +52,13 @@ for guess in range(8):
             or (guess_row == second_ship_row and guess_column == second_ship_column):
         print("Nice shot! We can escape now")
         break
+    
     else:
         if (guess_row < 0 or guess_row > 7) \
                 or (guess_column < 0 or guess_column > 7):
             print("Where are you aiming at, Focus!")
+        elif(sea[guess_row][guess_column] == "x"):
+            print ("You have already tried that location, go again.")
         else:
             print("That was close, keep trying")
             sea[guess_row][guess_column] = "x"
