@@ -31,8 +31,7 @@ With this project you have to guess where the randomly generated enemy ship is l
   The steps for deployment are as follows:
     - Created a new Heroku app.
     - Set the buildpacks to Python and NodeJS in that order.
-    - Linked the Heroku app to the repository by going to: deploy > selecting the github method 
-      > coonecting the app > deloying the main branch. 
+    - Linked the Heroku app to the repository by going to: deploy > selecting the github method > coonecting the app > deloying the main branch. 
     - Clicked on Deploy.
     
 ## Credit
