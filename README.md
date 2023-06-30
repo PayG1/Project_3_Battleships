@@ -21,8 +21,8 @@ With this project you have to guess where the randomly generated enemy ship is l
  
  -Validator Testing
  
-  ![](images/pep8.PNG)
-  - Fully passed the PEP8 online validator with no major issues
+  ![](images/pep8.png)
+  - Fully passed the CI Python Linter with no issues (https://pep8ci.herokuapp.com/)
 
 ## Deployment
   
@@ -31,7 +31,8 @@ With this project you have to guess where the randomly generated enemy ship is l
   The steps for deployment are as follows:
     - Created a new Heroku app.
     - Set the buildpacks to Python and NodeJS in that order.
-    - Linked the Heroku app to the repository.
+    - Linked the Heroku app to the repository by going to: deploy > selecting the github method 
+        > coonecting the app > deloying the main branch. 
     - Clicked on Deploy.
     
 ## Credit
